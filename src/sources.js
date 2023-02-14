@@ -3,6 +3,7 @@ import desEncriptador_D from './assets/des-encriptador.png'
 import interactiveCards_D from './assets/interactive-cards.png'
 import spaceTourism_D from './assets/space-tourism.png'
 import whatAlbum_D from './assets/what-album.png'
+import CV from './assets/CV-Valentin-Di-Geronimo.pdf'
 
 import hangMan_M from './assets/hangman-mobile.png'
 import desEncriptador_M from './assets/des-encriptador-mobile.png'
@@ -45,7 +46,7 @@ export const SRC = {
     svg: whatsapp_SVG
   },
   cv: {
-    url: "",
+    url: CV,
     svg: CV_SVG
   },
   projects: [
