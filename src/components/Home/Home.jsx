@@ -17,7 +17,7 @@ export default function Home() {
           I am a self-taught web developer with a strong focus on writing efficient and readable code. <br />
           My passion for programming drives me to continuously improve and tackle new challenges.
         </p>
-        <a href={SRC.cv.url} className='header-cv'>
+        <a href={SRC.cv.url} className='header-cv' target='_blank'>
           <img src={SRC.cv.svg} alt="Resume" className='header-cv-svg' />
           CV 🡭
         </a>
