@@ -1,0 +1,31 @@
+.header-nav-social-links li {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+}
+
+.social-link:hover {
+  color: var(--main-color);
+}
+
+.social-link {
+  color: var(--white);
+  letter-spacing: 1px;
+  text-underline-offset: 8px;
+}
+
+.social-link-svg {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+@media screen and (max-width: 425px) {
+  .social-link {
+    text-decoration: none;
+  }
+
+  .social-link-svg {
+    height: 2rem;
+    width: 2rem;
+  }
+}

@@ -1,0 +1,35 @@
+.skills-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  width: 70%;
+}
+
+.skill {
+  color: var(--white);
+  display: inline;
+}
+
+.skill-svg {
+  margin-right: 0.5rem;
+  vertical-align: middle;
+  width: 2rem;
+}
+
+
+@media screen and (max-width: 425px) {
+  .skill-lang {
+    display: none;
+  }
+
+  .skills-list {
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .skill-svg {
+    margin: 0;
+  }
+
+
+}

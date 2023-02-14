@@ -1,0 +1,84 @@
+.projects-section {
+  box-shadow: 0 0 8px var(--black);
+  padding: 2rem;
+}
+
+.projects-title {
+  color: var(--main-color);
+  font-weight: initial;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+}
+
+.projects-div {
+  display: flex;
+  justify-content: space-between;
+  height: 512px;
+}
+
+.navbar-pics {
+  box-shadow: 0 0 4px var(--black);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  overflow-y: scroll;
+  padding: 0.5rem;
+  width: 25%;
+}
+
+.pic:hover {
+  box-shadow: 0 0 2px var(--main-color);
+  cursor: pointer;
+}
+
+.project-picture {
+  align-items: center;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  justify-content: space-between;
+  letter-spacing: 1px;
+  text-decoration: none;
+  width: 70%;
+}
+
+.project-picture:hover {
+  color: var(--main-color);
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+
+.illustration {
+  box-shadow: 0 0 4px var(--black);
+}
+
+.illustration:hover {
+  box-shadow: 0 0 2px var(--main-color);
+}
+
+
+@media screen and (max-width: 425px) {
+  .projects-section {
+    padding: 0.5rem;
+  }
+
+  .projects-title {
+    text-align: center;
+  }
+
+  .navbar-pics {
+    flex-direction: row;
+    overflow: auto;
+    padding: 0;
+    width: 100%;
+  }
+
+  .navbar-pics::-webkit-scrollbar {
+    height: 4px;
+  }
+
+  .project-picture {
+    display: none;
+  }
+}
