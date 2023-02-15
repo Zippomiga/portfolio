@@ -33,7 +33,7 @@ export default function Projects() {
                     />
                   </button>
                 ) : (
-                  <a href={project.url}>
+                  <a href={project.url} target='_blank'>
                     <img
                       className='pic'
                       src={project.picture(width)}
@@ -48,7 +48,7 @@ export default function Projects() {
         </nav>
         {
           width > 425 && (
-            <a href={page.url} target="_blank" className='project-picture'>
+            <a href={page.url} target='_blank' className='project-picture'>
               <img
                 src={page.picture(width)}
                 alt={page.name}
