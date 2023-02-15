@@ -7,7 +7,7 @@ export default function Projects() {
   const [index, setIndex] = useState(0)
   const [width, setWidth] = useState(screen.width)
 
-  const project = SRC.projects[index]
+  const page = SRC.projects[index]
 
   useEffect(() => {
     window.addEventListener('resize', () => setWidth(screen.width))
@@ -23,25 +23,41 @@ export default function Projects() {
           {
             SRC.projects.map((project, i) => {
               return (
-                <img
-                  className='pic'
-                  src={project.picture(width)}
-                  alt={project.name}
-                  key={i}
-                  onClick={() => setIndex(i)}
-                />
+                width > 425 ? (
+                  <button onClick={() => setIndex(i)}>
+                    <img
+                      className='pic'
+                      src={project.picture(width)}
+                      alt={project.name}
+                      key={i}
+                    />
+                  </button>
+                ) : (
+                  <a href={project.url}>
+                    <img
+                      className='pic'
+                      src={project.picture(width)}
+                      alt={project.name}
+                      key={i}
+                    />
+                  </a>
+                )
               )
             })
           }
         </nav>
-        <a href={project.url} target="_blank" className='project-picture'>
-          <img
-            src={project.picture(width)}
-            alt={project.name}
-            className='illustration'
-          />
-          {project.name}
-        </a>
+        {
+          width > 425 && (
+            <a href={page.url} target="_blank" className='project-picture'>
+              <img
+                src={page.picture(width)}
+                alt={page.name}
+                className='illustration'
+              />
+              {page.name}
+            </a>
+          )
+        }
       </div>
     </section>
   )

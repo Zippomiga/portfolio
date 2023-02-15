@@ -73,6 +73,7 @@
   }
 
   .header-section {
+    align-items: center;
     flex-direction: column;
     margin-top: 0;
   }
@@ -85,10 +86,14 @@
     width: 100%;
   }
 
+  .header-cv {
+    box-shadow: 0 0 4px var(--black);
+    margin: 0.5rem;
+    padding: 0.5rem;
+    width: fit-content;
+  }
+
   .header-cv-svg {
     display: none;
-    /* vertical-align: middle; */
-    /* margin-right: 0.5rem; */
-    /* width: 2rem; */
   }
 }

@@ -26,6 +26,11 @@
   width: 25%;
 }
 
+.navbar-pics button {
+  background: none;
+  border: none;
+}
+
 .pic:hover {
   box-shadow: 0 0 2px var(--main-color);
   cursor: pointer;
@@ -64,21 +69,22 @@
   }
 
   .projects-title {
+    margin-bottom: 1rem;
     text-align: center;
   }
 
   .navbar-pics {
-    flex-direction: row;
-    overflow: auto;
+    flex-wrap: wrap;
+    overflow-y: hidden;
     padding: 0;
     width: 100%;
   }
 
-  .navbar-pics::-webkit-scrollbar {
-    height: 4px;
+  .projects-div {
+    height: 625px;
   }
 
-  .project-picture {
-    display: none;
+  .navbar-pics::-webkit-scrollbar {
+    height: 4px;
   }
 }
