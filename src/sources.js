@@ -1,15 +1,15 @@
-import hangMan_D from './assets/hangman.png'
-import desEncriptador_D from './assets/des-encriptador.png'
-import interactiveCards_D from './assets/interactive-cards.png'
-import spaceTourism_D from './assets/space-tourism.png'
-import whatAlbum_D from './assets/what-album.png'
+// import hangMan_D from './assets/hangman.png'
+// import desEncriptador_D from './assets/des-encriptador.png'
+// import interactiveCards_D from './assets/interactive-cards.png'
+// import spaceTourism_D from './assets/space-tourism.png'
+// import whatAlbum_D from './assets/what-album.png'
 import CV from './assets/CV-Valentin-Di-Geronimo.pdf'
 
-import hangMan_M from './assets/hangman-mobile.png'
-import desEncriptador_M from './assets/des-encriptador-mobile.png'
-import interactiveCards_M from './assets/interactive-cards-mobile.png'
-import spaceTourism_M from './assets/space-tourism-mobile.png'
-import whatAlbum_M from './assets/what-album-mobile.png'
+// import hangMan_M from './assets/hangman-mobile.png'
+// import desEncriptador_M from './assets/des-encriptador-mobile.png'
+// import interactiveCards_M from './assets/interactive-cards-mobile.png'
+// import spaceTourism_M from './assets/space-tourism-mobile.png'
+// import whatAlbum_M from './assets/what-album-mobile.png'
 
 import CV_SVG from './assets/resume.svg'
 import github_SVG from './assets/github.svg'
@@ -23,9 +23,6 @@ import javascript_SVG from './assets/javascript.svg'
 import git_SVG from './assets/git.svg'
 import react_SVG from './assets/react.svg'
 import python_SVG from './assets/python.svg'
-
-
-const screen = (width = 768, desktop, mobile) => width > 425 ? desktop : mobile
 
 
 export const SRC = {
@@ -53,27 +50,27 @@ export const SRC = {
     {
       name: 'What Album',
       url: "https://zippomiga.github.io/what-album/",
-      picture: (width) => screen(width, whatAlbum_D, whatAlbum_M)
+      bg: 'bg-what-album'
     },
     {
       name: 'Space Tourism',
       url: "https://zippomiga.github.io/space-tourism/",
-      picture: (width) => screen(width, spaceTourism_D, spaceTourism_M)
+      bg: 'bg-space-tourism'
     },
     {
       name: 'Hangman Game',
       url: "https://zippomiga.github.io/hangman-game/",
-      picture: (width) => screen(width, hangMan_D, hangMan_M)
+      bg: 'bg-hangman'
     },
     {
       name: 'Interactive Cards',
       url: "https://zippomiga.github.io/interactive-cards/",
-      picture: (width) => screen(width, interactiveCards_D, interactiveCards_M)
+      bg: 'bg-interactive-cards'
     },
     {
       name: 'Des-Encriptador',
       url: "https://zippomiga.github.io/des-encriptador/",
-      picture: (width) => screen(width, desEncriptador_D, desEncriptador_M)
+      bg: 'bg-des-encriptador'
     }
   ],
   skills: [

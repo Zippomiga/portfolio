@@ -14,7 +14,7 @@
 }
 
 .header-fundamental {
-  border-bottom: 2px dashed var(--fuchsia);
+  border-bottom: 1px solid var(--gray);
   color: var(--white);
   font-size: 1.5rem;
   font-style: italic;
@@ -87,10 +87,9 @@
   }
 
   .header-cv {
-    box-shadow: 0 0 4px var(--black);
+    border-bottom: 1px solid var(--fuchsia);
     margin: 0.5rem;
     padding: 0.5rem;
-    width: fit-content;
   }
 
   .header-cv-svg {

@@ -1,3 +1,4 @@
+import './backgrounds.css'
 import './projects.css'
 import { SRC } from '../../sources'
 import { useEffect, useState } from 'react'
@@ -23,40 +24,33 @@ export default function Projects() {
           {
             SRC.projects.map((project, i) => {
               return (
-                width > 425 ? (
-                  <button onClick={() => setIndex(i)}>
-                    <img
-                      className='pic'
-                      src={project.picture(width)}
-                      alt={project.name}
-                      key={i}
-                    />
-                  </button>
-                ) : (
-                  <a href={project.url} target='_blank'>
-                    <img
-                      className='pic'
-                      src={project.picture(width)}
-                      alt={project.name}
-                      key={i}
-                    />
-                  </a>
-                )
+                width > 425 ?
+                  <button
+                    onClick={() => setIndex(i)}
+                    className={project.bg}
+                    key={i}
+                  /> :
+                  <a
+                    href={project.url}
+                    target='_blank'
+                    className={project.bg}
+                    key={i}
+                  />
               )
             })
           }
         </nav>
         {
-          width > 425 && (
-            <a href={page.url} target='_blank' className='project-picture'>
-              <img
-                src={page.picture(width)}
-                alt={page.name}
-                className='illustration'
-              />
+          width > 425 &&
+          <a
+            href={page.url}
+            target='_blank'
+            className={page.bg}
+          >
+            <span className='project-name'>
               {page.name}
-            </a>
-          )
+            </span>
+          </a>
         }
       </div>
     </section>

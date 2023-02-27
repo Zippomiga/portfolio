@@ -2,13 +2,13 @@
 
 
 :root {
-  --main-color: #7cfc00;
+  --main-color: rgb(0, 255, 76);
   --black: #000;
-  --fuchsia: #ac00ac;
+  --fuchsia: #ff00ff;
   --gray: #979797;
   --white: #fff;
-  /* background: -webkit-linear-gradient(to bottom, #151515, var(--black)); */
-  /* background: linear-gradient(to bottom, #151515, var(--black)); */
+  background: -webkit-linear-gradient(to bottom, #151515, var(--black));
+  background: linear-gradient(to bottom, #151515, var(--black));
   font-family: 'Russo One', sans-serif;
   user-select: none;
 }

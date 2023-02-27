@@ -1,0 +1,42 @@
+.bg-what-album {
+  background: url(../../assets/what-album.png);
+}
+
+.bg-space-tourism {
+  background: url(../../assets/space-tourism.png);
+}
+
+.bg-hangman {
+  background: url(../../assets/hangman.png);
+}
+
+.bg-interactive-cards {
+  background: url(../../assets/interactive-cards.png);
+}
+
+.bg-des-encriptador {
+  background: url(../../assets/des-encriptador.png);
+}
+
+
+@media screen and (max-width: 425px) {
+  .bg-what-album {
+    background: url(../../assets/what-album-mobile.png);
+  }
+  
+  .bg-space-tourism {
+    background: url(../../assets/space-tourism-mobile.png);
+  }
+  
+  .bg-hangman {
+    background: url(../../assets/hangman-mobile.png);
+  }
+  
+  .bg-interactive-cards {
+    background: url(../../assets/interactive-cards-mobile.png);
+  }
+  
+  .bg-des-encriptador {
+    background: url(../../assets/des-encriptador-mobile.png);
+  }
+}
