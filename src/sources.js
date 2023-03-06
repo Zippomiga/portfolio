@@ -63,6 +63,11 @@ export const SRC = {
       bg: 'bg-hangman'
     },
     {
+      name: 'Todo App',
+      url: "https://zippomiga.github.io/todo-app/",
+      bg: 'bg-todo-app'
+    },
+    {
       name: 'Interactive Cards',
       url: "https://zippomiga.github.io/interactive-cards/",
       bg: 'bg-interactive-cards'

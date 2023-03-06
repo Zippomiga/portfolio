@@ -18,6 +18,10 @@
   background: url(../../assets/des-encriptador.png);
 }
 
+.bg-todo-app {
+  background: url(../../assets/todo-app.png);
+}
+
 
 @media screen and (max-width: 425px) {
   .bg-what-album {
@@ -38,5 +42,9 @@
   
   .bg-des-encriptador {
     background: url(../../assets/des-encriptador-mobile.png);
+  }
+
+  .bg-todo-app {
+    background: url(../../assets/todo-app-mobile.png);
   }
 }
