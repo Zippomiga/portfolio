@@ -1,13 +1,16 @@
 .contact {
+  background-color: #000000b3;
   box-shadow: 0 0 8px var(--black);
   padding: 2rem;
 }
 
 .contact-title {
-  color: var(--main-color);
+  border-bottom: 1px solid var(--main-color);
+  color: var(--white);
   font-weight: initial;
   letter-spacing: 1px;
   margin-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
 .header-nav-social-links {

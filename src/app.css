@@ -2,9 +2,9 @@
 
 
 :root {
-  --main-color: rgb(0, 255, 76);
+  --light-green: #00ff4c;
   --black: #000;
-  --fuchsia: #ff00ff;
+  --main-color: #ff0040;
   --gray: #979797;
   --white: #fff;
   background: -webkit-linear-gradient(to bottom, #151515, var(--black));
@@ -15,6 +15,11 @@
 
 main {
   background: #151515;
+  background: url(assets/main-background.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: auto;
+  background-repeat: no-repeat;
   border: 2px solid var(--main-color);
   border-right: none;
   display: flex;

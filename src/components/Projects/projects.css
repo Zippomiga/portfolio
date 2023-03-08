@@ -1,13 +1,16 @@
 .projects-section {
+  background-color: #000000b3;
   box-shadow: 0 0 8px var(--black);
   padding: 2rem;
 }
 
 .projects-title {
-  color: var(--main-color);
+  border-bottom: 1px solid var(--main-color);
+  color: var(--white);
   font-weight: initial;
   letter-spacing: 1px;
   margin-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
 .projects-div {
@@ -33,15 +36,15 @@
 }
 
 .projects-div a:hover {
-  box-shadow: 0 0 2px var(--main-color);
+  box-shadow: 0 0 4px var(--main-color);
   color: var(--main-color);
-  /* text-decoration: underline; */
-  /* text-underline-offset: 8px; */
 }
 
 .project-name {
   box-shadow: 0 0 2px var(--black);
-  background: #151515;
+  background: var(--black);
+  margin-bottom: 0.2rem;
+  margin-left: 0.2rem;
   padding: 0.2rem 0.4rem;
 }
 
@@ -54,6 +57,7 @@
 
 .navbar-pics button {
   aspect-ratio: 16 / 9;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
   border: none;
@@ -61,7 +65,7 @@
 }
 
 .navbar-pics button:hover {
-  box-shadow: 0 0 2px var(--main-color);
+  box-shadow: 0 0 4px var(--main-color);
   cursor: pointer;
 }
 
@@ -84,7 +88,7 @@
   }
 
   .navbar-pics::-webkit-scrollbar {
-    height: 4px;
+    height: 3px;
   }
 
   .navbar-pics a {

@@ -1,13 +1,13 @@
 .skills-list {
   display: flex;
   justify-content: space-between;
+  list-style: none;
   margin-top: 1rem;
   width: 70%;
 }
 
 .skill {
   color: var(--white);
-  display: inline;
 }
 
 .skill-svg {
